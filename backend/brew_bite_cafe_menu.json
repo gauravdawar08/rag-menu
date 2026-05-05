@@ -1,0 +1,903 @@
+{
+  "cafe_info": {
+    "name": "Brew & Bite Café",
+    "location": "Sydney, NSW",
+    "operating_hours": {
+      "weekday": "6:30 AM - 4:00 PM",
+      "weekend": "7:00 AM - 5:00 PM"
+    },
+    "last_updated": "2025-11-12"
+  },
+  "menu_items": [
+    {
+      "id": "coffee_001",
+      "name": "Flat White",
+      "category": "hot_coffee",
+      "subcategory": "espresso_based",
+      "description": "Velvety smooth espresso with microfoam milk. Our signature Sydney-style flat white with a double shot.",
+      "sizes_and_prices": {
+        "regular": 4.80,
+        "large": 5.50
+      },
+      "base_ingredients": [
+        "double shot espresso",
+        "full cream milk",
+        "microfoam"
+      ],
+      "allergens": ["dairy"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "brew_type": "espresso",
+        "temperature": "hot",
+        "can_be_iced": false,
+        "can_be_decaf": true,
+        "preparation_time": "3-4 minutes"
+      },
+      "customization_options": {
+        "milk_alternatives": {
+          "available": ["skim milk", "oat milk", "soy milk", "almond milk", "lactose-free milk"],
+          "extra_cost": {
+            "oat milk": 1.00,
+            "almond milk": 1.00,
+            "soy milk": 0.50,
+            "lactose-free milk": 0.50,
+            "skim milk": 0.00
+          }
+        },
+        "shots": {
+          "extra_shot": 0.50,
+          "decaf": 0.00,
+          "half_decaf": 0.00
+        },
+        "sweeteners": {
+          "available": ["sugar", "honey", "stevia", "sugar-free syrup"],
+          "cost": 0.00
+        },
+        "temperature": ["extra hot", "warm", "standard"]
+      },
+      "constraints": [
+        "Cannot be made iced - structure breaks down",
+        "Oat milk creates slightly sweeter taste",
+        "Almond milk may separate if too hot"
+      ],
+      "availability": "all_day",
+      "strength_level": "medium-strong",
+      "caffeine_content_mg": 154
+    },
+    {
+      "id": "coffee_002",
+      "name": "Cappuccino",
+      "category": "hot_coffee",
+      "subcategory": "espresso_based",
+      "description": "Classic Italian-style cappuccino with equal parts espresso, steamed milk, and foam. Topped with chocolate powder.",
+      "sizes_and_prices": {
+        "regular": 4.80,
+        "large": 5.50
+      },
+      "base_ingredients": [
+        "double shot espresso",
+        "full cream milk",
+        "milk foam",
+        "chocolate powder"
+      ],
+      "allergens": ["dairy"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "brew_type": "espresso",
+        "temperature": "hot",
+        "can_be_iced": false,
+        "can_be_decaf": true,
+        "preparation_time": "3-4 minutes"
+      },
+      "customization_options": {
+        "milk_alternatives": {
+          "available": ["skim milk", "oat milk", "soy milk", "almond milk", "lactose-free milk"],
+          "extra_cost": {
+            "oat milk": 1.00,
+            "almond milk": 1.00,
+            "soy milk": 0.50,
+            "lactose-free milk": 0.50,
+            "skim milk": 0.00
+          }
+        },
+        "shots": {
+          "extra_shot": 0.50,
+          "decaf": 0.00
+        },
+        "foam": ["extra foam", "less foam", "standard"],
+        "chocolate": ["extra chocolate", "no chocolate"]
+      },
+      "constraints": [
+        "Cannot be made iced",
+        "Extra foam reduces coffee flavor intensity"
+      ],
+      "availability": "all_day",
+      "strength_level": "medium",
+      "caffeine_content_mg": 154
+    },
+    {
+      "id": "coffee_003",
+      "name": "Latte",
+      "category": "hot_coffee",
+      "subcategory": "espresso_based",
+      "description": "Smooth and creamy espresso with steamed milk and a thin layer of foam. Milder than a flat white.",
+      "sizes_and_prices": {
+        "regular": 4.80,
+        "large": 5.50
+      },
+      "base_ingredients": [
+        "single shot espresso",
+        "full cream milk",
+        "light foam"
+      ],
+      "allergens": ["dairy"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "brew_type": "espresso",
+        "temperature": "hot",
+        "can_be_iced": true,
+        "can_be_decaf": true,
+        "preparation_time": "3-4 minutes"
+      },
+      "customization_options": {
+        "milk_alternatives": {
+          "available": ["skim milk", "oat milk", "soy milk", "almond milk", "lactose-free milk"],
+          "extra_cost": {
+            "oat milk": 1.00,
+            "almond milk": 1.00,
+            "soy milk": 0.50,
+            "lactose-free milk": 0.50,
+            "skim milk": 0.00
+          }
+        },
+        "shots": {
+          "extra_shot": 0.50,
+          "decaf": 0.00,
+          "half_decaf": 0.00
+        },
+        "flavored_syrups": {
+          "available": ["vanilla", "caramel", "hazelnut", "sugar-free vanilla", "sugar-free caramel"],
+          "cost": 0.80,
+          "sugar_free_cost": 1.00
+        },
+        "sweeteners": ["sugar", "honey", "stevia"]
+      },
+      "constraints": [
+        "Iced version uses less milk, more ice"
+      ],
+      "availability": "all_day",
+      "strength_level": "mild-medium",
+      "caffeine_content_mg": 77
+    },
+    {
+      "id": "coffee_004",
+      "name": "Mocha",
+      "category": "hot_coffee",
+      "subcategory": "espresso_based",
+      "description": "Rich espresso with steamed milk, chocolate syrup, and whipped cream. A sweet chocolate-coffee treat.",
+      "sizes_and_prices": {
+        "regular": 5.80,
+        "large": 6.50
+      },
+      "base_ingredients": [
+        "single shot espresso",
+        "full cream milk",
+        "chocolate syrup",
+        "whipped cream"
+      ],
+      "allergens": ["dairy"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "brew_type": "espresso",
+        "temperature": "hot",
+        "can_be_iced": true,
+        "can_be_decaf": true,
+        "preparation_time": "4-5 minutes"
+      },
+      "customization_options": {
+        "milk_alternatives": {
+          "available": ["skim milk", "oat milk", "soy milk", "almond milk", "lactose-free milk"],
+          "extra_cost": {
+            "oat milk": 1.00,
+            "almond milk": 1.00,
+            "soy milk": 0.50,
+            "lactose-free milk": 0.50,
+            "skim milk": 0.00
+          },
+          "notes": {
+            "whipped_cream": "Contains dairy - cannot be made vegan with whipped cream"
+          }
+        },
+        "shots": {
+          "extra_shot": 0.50,
+          "decaf": 0.00
+        },
+        "chocolate": ["extra chocolate +$0.50", "less chocolate", "dark chocolate +$0.80"],
+        "cream": ["no cream (vegan option)", "extra cream +$1.00"]
+      },
+      "constraints": [
+        "Cannot be made vegan if keeping whipped cream - cream contains dairy",
+        "Sugar-free option available with sugar-free chocolate syrup"
+      ],
+      "availability": "all_day",
+      "strength_level": "mild",
+      "caffeine_content_mg": 77,
+      "sugar_content": "high"
+    },
+    {
+      "id": "coffee_005",
+      "name": "Long Black",
+      "category": "hot_coffee",
+      "subcategory": "black_coffee",
+      "description": "Double shot espresso diluted with hot water. Strong and bold Australian favorite.",
+      "sizes_and_prices": {
+        "regular": 4.50,
+        "large": 5.00
+      },
+      "base_ingredients": [
+        "double shot espresso",
+        "hot water"
+      ],
+      "allergens": [],
+      "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free"],
+      "preparation": {
+        "brew_type": "espresso",
+        "temperature": "hot",
+        "can_be_iced": true,
+        "can_be_decaf": true,
+        "preparation_time": "2-3 minutes"
+      },
+      "customization_options": {
+        "shots": {
+          "extra_shot": 0.50,
+          "decaf": 0.00
+        },
+        "strength": ["extra strong (less water)", "regular", "weak (more water)"],
+        "milk_on_side": "available free"
+      },
+      "constraints": [],
+      "availability": "all_day",
+      "strength_level": "strong",
+      "caffeine_content_mg": 154
+    },
+    {
+      "id": "coffee_006",
+      "name": "Cold Brew",
+      "category": "cold_coffee",
+      "subcategory": "brewed",
+      "description": "Smooth, low-acidity coffee steeped cold for 18 hours. Naturally sweet and refreshing.",
+      "sizes_and_prices": {
+        "regular": 6.00,
+        "large": 7.50
+      },
+      "base_ingredients": [
+        "cold brew concentrate",
+        "filtered water",
+        "ice"
+      ],
+      "allergens": [],
+      "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free"],
+      "preparation": {
+        "brew_type": "cold_brew",
+        "temperature": "cold",
+        "can_be_iced": true,
+        "can_be_decaf": false,
+        "preparation_time": "1-2 minutes (pre-brewed)"
+      },
+      "customization_options": {
+        "milk_alternatives": {
+          "available": ["full cream milk", "oat milk", "soy milk", "almond milk", "coconut milk"],
+          "cost": 1.00
+        },
+        "ice": ["less ice", "regular ice", "extra ice"],
+        "sweeteners": {
+          "available": ["simple syrup", "honey", "vanilla syrup", "caramel syrup", "sugar-free vanilla"],
+          "cost": 0.80
+        }
+      },
+      "constraints": [
+        "Cannot be made decaf - requires special brewing process",
+        "Cannot be served hot - changes flavor profile"
+      ],
+      "availability": "all_day",
+      "strength_level": "very_strong",
+      "caffeine_content_mg": 200
+    },
+    {
+      "id": "coffee_007",
+      "name": "Iced Latte",
+      "category": "cold_coffee",
+      "subcategory": "espresso_based",
+      "description": "Chilled espresso with cold milk over ice. Light and refreshing.",
+      "sizes_and_prices": {
+        "regular": 5.50,
+        "large": 6.50
+      },
+      "base_ingredients": [
+        "double shot espresso",
+        "cold full cream milk",
+        "ice"
+      ],
+      "allergens": ["dairy"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "brew_type": "espresso",
+        "temperature": "cold",
+        "can_be_iced": true,
+        "can_be_decaf": true,
+        "preparation_time": "3-4 minutes"
+      },
+      "customization_options": {
+        "milk_alternatives": {
+          "available": ["skim milk", "oat milk", "soy milk", "almond milk", "lactose-free milk", "coconut milk"],
+          "extra_cost": {
+            "oat milk": 1.00,
+            "almond milk": 1.00,
+            "coconut milk": 1.00,
+            "soy milk": 0.50,
+            "lactose-free milk": 0.50,
+            "skim milk": 0.00
+          }
+        },
+        "shots": {
+          "extra_shot": 0.50,
+          "decaf": 0.00
+        },
+        "flavored_syrups": {
+          "available": ["vanilla", "caramel", "hazelnut", "sugar-free vanilla", "sugar-free caramel"],
+          "cost": 0.80
+        },
+        "ice": ["light ice", "regular ice", "extra ice"]
+      },
+      "constraints": [],
+      "availability": "all_day",
+      "strength_level": "medium",
+      "caffeine_content_mg": 154
+    },
+    {
+      "id": "food_001",
+      "name": "Avocado Toast",
+      "category": "breakfast",
+      "subcategory": "mains",
+      "description": "Smashed avocado on toasted sourdough with cherry tomatoes, feta, olive oil, and lemon. Classic Aussie breakfast.",
+      "sizes_and_prices": {
+        "regular": 16.00
+      },
+      "base_ingredients": [
+        "sourdough bread",
+        "avocado",
+        "cherry tomatoes",
+        "feta cheese",
+        "olive oil",
+        "lemon juice",
+        "salt",
+        "pepper",
+        "chili flakes (optional)"
+      ],
+      "allergens": ["gluten", "dairy"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "cooked": "bread toasted, vegetables raw",
+        "temperature": "served warm",
+        "preparation_time": "8-10 minutes"
+      },
+      "customization_options": {
+        "bread": {
+          "available": ["sourdough (default)", "gluten-free bread +$3.00", "multigrain +$1.00"],
+          "cannot_remove": "bread is base"
+        },
+        "toppings_add": [
+          "poached egg +$3.00",
+          "bacon +$4.00",
+          "smoked salmon +$5.00",
+          "mushrooms +$3.00",
+          "halloumi +$4.00"
+        ],
+        "modifications": [
+          "no feta (makes it vegan)",
+          "extra avocado +$3.00",
+          "no tomatoes",
+          "extra lemon"
+        ]
+      },
+      "constraints": [
+        "Can be made vegan by removing feta",
+        "Can be made gluten-free with GF bread",
+        "Cannot make without bread"
+      ],
+      "availability": "all_day",
+      "vegan_option": "yes (remove feta)",
+      "gluten_free_option": "yes (GF bread +$3)"
+    },
+    {
+      "id": "food_002",
+      "name": "Eggs Benedict",
+      "category": "breakfast",
+      "subcategory": "mains",
+      "description": "Poached eggs on toasted English muffin with ham and hollandaise sauce. Rich and indulgent.",
+      "sizes_and_prices": {
+        "regular": 18.00
+      },
+      "base_ingredients": [
+        "english muffin",
+        "poached eggs (2)",
+        "ham",
+        "hollandaise sauce",
+        "butter",
+        "chives"
+      ],
+      "allergens": ["gluten", "dairy", "eggs"],
+      "dietary_tags": [],
+      "preparation": {
+        "cooked": "eggs poached, muffin toasted, hollandaise made fresh",
+        "temperature": "served hot",
+        "preparation_time": "12-15 minutes"
+      },
+      "customization_options": {
+        "protein_swap": [
+          "bacon instead of ham (no charge)",
+          "smoked salmon +$3.00",
+          "spinach (vegetarian, no charge)",
+          "mushrooms (vegetarian, no charge)"
+        ],
+        "sauce": [
+          "extra hollandaise +$2.00",
+          "light hollandaise"
+        ],
+        "eggs": [
+          "fried instead of poached",
+          "scrambled instead of poached"
+        ]
+      },
+      "constraints": [
+        "Cannot be made vegan - hollandaise contains eggs and butter",
+        "Cannot be made dairy-free - hollandaise contains butter",
+        "Can swap ham for vegetarian options"
+      ],
+      "availability": "breakfast_and_brunch (6:30 AM - 2:00 PM)",
+      "vegan_option": "no",
+      "gluten_free_option": "no"
+    },
+    {
+      "id": "food_003",
+      "name": "Acai Bowl",
+      "category": "breakfast",
+      "subcategory": "healthy",
+      "description": "Thick acai smoothie bowl topped with granola, fresh berries, banana, coconut, and honey. Refreshing and nutritious.",
+      "sizes_and_prices": {
+        "regular": 15.00
+      },
+      "base_ingredients": [
+        "acai puree",
+        "banana",
+        "mixed berries",
+        "almond milk",
+        "granola",
+        "fresh strawberries",
+        "blueberries",
+        "shredded coconut",
+        "honey"
+      ],
+      "allergens": ["tree nuts (almond milk, coconut)", "gluten (granola)", "may contain traces of other nuts"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "cooked": "no - fresh and raw",
+        "temperature": "cold",
+        "preparation_time": "5-7 minutes"
+      },
+      "customization_options": {
+        "milk_base": [
+          "almond milk (default)",
+          "oat milk",
+          "coconut milk",
+          "soy milk"
+        ],
+        "toppings_add": [
+          "peanut butter +$2.00",
+          "extra berries +$3.00",
+          "chia seeds +$1.00",
+          "protein powder +$3.00"
+        ],
+        "modifications": [
+          "no granola (gluten-free)",
+          "no honey (vegan - we don't replace)",
+          "no coconut",
+          "extra banana"
+        ]
+      },
+      "constraints": [
+        "Can be made vegan by removing honey",
+        "Can be made gluten-free by removing granola",
+        "Contains nuts (almond milk, coconut) - cannot be made nut-free"
+      ],
+      "availability": "all_day",
+      "vegan_option": "yes (no honey)",
+      "gluten_free_option": "yes (no granola)"
+    },
+    {
+      "id": "food_004",
+      "name": "Chicken Caesar Wrap",
+      "category": "lunch",
+      "subcategory": "wraps",
+      "description": "Grilled chicken, cos lettuce, parmesan, bacon, and Caesar dressing in a tortilla wrap. Hearty and satisfying.",
+      "sizes_and_prices": {
+        "regular": 14.00
+      },
+      "base_ingredients": [
+        "flour tortilla",
+        "grilled chicken breast",
+        "cos lettuce",
+        "bacon",
+        "parmesan cheese",
+        "caesar dressing",
+        "croutons"
+      ],
+      "allergens": ["gluten", "dairy", "eggs (in dressing)", "may contain fish (anchovies in dressing)"],
+      "dietary_tags": [],
+      "preparation": {
+        "cooked": "chicken and bacon grilled, wrap toasted",
+        "temperature": "served warm",
+        "preparation_time": "10-12 minutes"
+      },
+      "customization_options": {
+        "wrap_type": [
+          "regular flour tortilla",
+          "wholemeal wrap +$1.00",
+          "gluten-free wrap +$2.00"
+        ],
+        "protein": [
+          "no chicken (vegetarian)",
+          "extra chicken +$4.00"
+        ],
+        "modifications": [
+          "no bacon",
+          "no cheese",
+          "no dressing",
+          "extra lettuce",
+          "add avocado +$3.00"
+        ]
+      },
+      "constraints": [
+        "Caesar dressing contains anchovies - not vegetarian even without chicken",
+        "Can be made without bacon but still contains fish in dressing",
+        "Cannot be made vegan - dressing contains eggs and anchovies"
+      ],
+      "availability": "lunch_and_all_day (11:00 AM - close)",
+      "vegan_option": "no",
+      "gluten_free_option": "yes (GF wrap +$2)"
+    },
+    {
+      "id": "food_005",
+      "name": "Falafel Wrap",
+      "category": "lunch",
+      "subcategory": "wraps",
+      "description": "Crispy falafel with hummus, tahini, lettuce, tomato, cucumber, and pickled cabbage in a wrap. Vegan and delicious.",
+      "sizes_and_prices": {
+        "regular": 13.00
+      },
+      "base_ingredients": [
+        "flour tortilla",
+        "falafel balls (chickpea based)",
+        "hummus",
+        "tahini sauce",
+        "lettuce",
+        "tomato",
+        "cucumber",
+        "pickled red cabbage",
+        "lemon juice"
+      ],
+      "allergens": ["gluten", "sesame (tahini, hummus)"],
+      "dietary_tags": ["vegan", "vegetarian", "dairy-free"],
+      "preparation": {
+        "cooked": "falafel fried fresh, vegetables raw",
+        "temperature": "served warm",
+        "preparation_time": "8-10 minutes"
+      },
+      "customization_options": {
+        "wrap_type": [
+          "regular flour tortilla",
+          "wholemeal wrap +$1.00",
+          "gluten-free wrap +$2.00"
+        ],
+        "sauces": [
+          "extra hummus +$1.00",
+          "extra tahini +$1.00",
+          "hot sauce",
+          "garlic sauce +$1.00"
+        ],
+        "modifications": [
+          "no tahini (sesame allergy)",
+          "no hummus (sesame allergy)",
+          "extra falafel +$3.00",
+          "add avocado +$3.00",
+          "add halloumi +$4.00 (no longer vegan)"
+        ]
+      },
+      "constraints": [
+        "Contains sesame (tahini and hummus) - cannot be made sesame-free",
+        "Falafel contains chickpeas (legume)",
+        "Already vegan by default"
+      ],
+      "availability": "lunch_and_all_day (11:00 AM - close)",
+      "vegan_option": "yes (default)",
+      "gluten_free_option": "yes (GF wrap +$2)"
+    },
+    {
+      "id": "food_006",
+      "name": "Banana Bread",
+      "category": "pastry",
+      "subcategory": "sweet",
+      "description": "Homemade moist banana bread with walnuts. Served toasted with butter.",
+      "sizes_and_prices": {
+        "slice": 6.50
+      },
+      "base_ingredients": [
+        "flour",
+        "banana",
+        "eggs",
+        "butter",
+        "sugar",
+        "walnuts",
+        "baking soda",
+        "vanilla extract"
+      ],
+      "allergens": ["gluten", "dairy", "eggs", "tree nuts (walnuts)"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "cooked": "baked fresh daily",
+        "temperature": "served toasted warm",
+        "preparation_time": "3-4 minutes (to toast)"
+      },
+      "customization_options": {
+        "serving": [
+          "toasted (default)",
+          "untoasted",
+          "extra butter +$0.50",
+          "no butter"
+        ],
+        "add_ons": [
+          "nutella +$2.00",
+          "peanut butter +$2.00",
+          "honey +$1.00"
+        ]
+      },
+      "constraints": [
+        "Contains walnuts - cannot be made nut-free",
+        "Contains gluten, dairy, and eggs - cannot accommodate most dietary restrictions",
+        "Baked fresh - no ingredient substitutions possible"
+      ],
+      "availability": "all_day (until sold out)",
+      "vegan_option": "no",
+      "gluten_free_option": "no"
+    },
+    {
+      "id": "food_007",
+      "name": "Blueberry Muffin",
+      "category": "pastry",
+      "subcategory": "sweet",
+      "description": "Fluffy muffin packed with fresh blueberries. A classic sweet treat.",
+      "sizes_and_prices": {
+        "regular": 5.50
+      },
+      "base_ingredients": [
+        "flour",
+        "blueberries",
+        "eggs",
+        "milk",
+        "butter",
+        "sugar",
+        "baking powder",
+        "vanilla extract"
+      ],
+      "allergens": ["gluten", "dairy", "eggs"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "cooked": "baked fresh daily",
+        "temperature": "room temperature or warmed",
+        "preparation_time": "2 minutes (if warmed)"
+      },
+      "customization_options": {
+        "serving": [
+          "room temperature (default)",
+          "warmed"
+        ]
+      },
+      "constraints": [
+        "Contains gluten, dairy, and eggs",
+        "No substitutions available - pre-baked item"
+      ],
+      "availability": "all_day (until sold out)",
+      "vegan_option": "no",
+      "gluten_free_option": "no"
+    },
+    {
+      "id": "food_008",
+      "name": "Vegan Brownie",
+      "category": "pastry",
+      "subcategory": "sweet",
+      "description": "Rich, fudgy chocolate brownie made without eggs or dairy. Dense and decadent.",
+      "sizes_and_prices": {
+        "regular": 6.00
+      },
+      "base_ingredients": [
+        "flour",
+        "cocoa powder",
+        "coconut oil",
+        "almond milk",
+        "sugar",
+        "dark chocolate chips",
+        "vanilla extract",
+        "baking powder"
+      ],
+      "allergens": ["gluten", "tree nuts (almond milk)", "may contain soy (chocolate chips)"],
+      "dietary_tags": ["vegan", "vegetarian", "dairy-free", "egg-free"],
+      "preparation": {
+        "cooked": "baked fresh daily",
+        "temperature": "room temperature or warmed",
+        "preparation_time": "2 minutes (if warmed)"
+      },
+      "customization_options": {
+        "serving": [
+          "room temperature (default)",
+          "warmed"
+        ]
+      },
+      "constraints": [
+        "Contains gluten - not gluten-free",
+        "Contains almond milk (tree nut)",
+        "Already vegan"
+      ],
+      "availability": "all_day (until sold out)",
+      "vegan_option": "yes (default)",
+      "gluten_free_option": "no"
+    },
+    {
+      "id": "drink_001",
+      "name": "Fresh Orange Juice",
+      "category": "fresh_juice",
+      "subcategory": "cold_drinks",
+      "description": "Freshly squeezed orange juice. No added sugar, 100% pure fruit.",
+      "sizes_and_prices": {
+        "regular": 6.50,
+        "large": 8.00
+      },
+      "base_ingredients": [
+        "fresh oranges"
+      ],
+      "allergens": [],
+      "dietary_tags": ["vegan", "vegetarian", "dairy-free", "gluten-free", "nut-free"],
+      "preparation": {
+        "cooked": "no - fresh squeezed",
+        "temperature": "cold",
+        "preparation_time": "3-5 minutes"
+      },
+      "customization_options": {
+        "ice": ["with ice", "no ice"],
+        "pulp": ["with pulp (default)", "no pulp (strained)"]
+      },
+      "constraints": [
+        "Made to order - requires fresh oranges in stock"
+      ],
+      "availability": "all_day",
+      "vegan_option": "yes (default)",
+      "gluten_free_option": "yes (default)"
+    },
+    {
+      "id": "drink_002",
+      "name": "Matcha Latte",
+      "category": "specialty_drinks",
+      "subcategory": "hot_drinks",
+      "description": "Ceremonial grade matcha green tea with steamed milk. Smooth, earthy, and energizing.",
+      "sizes_and_prices": {
+        "regular": 5.80,
+        "large": 6.80
+      },
+      "base_ingredients": [
+        "ceremonial grade matcha powder",
+        "full cream milk",
+        "hot water"
+      ],
+      "allergens": ["dairy"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "brew_type": "whisked_matcha",
+        "temperature": "hot",
+        "can_be_iced": true,
+        "can_be_decaf": true,
+        "preparation_time": "4-5 minutes"
+      },
+      "customization_options": {
+        "milk_alternatives": {
+          "available": ["skim milk", "oat milk", "soy milk", "almond milk", "coconut milk"],
+          "extra_cost": {
+            "oat milk": 1.00,
+            "almond milk": 1.00,
+            "coconut milk": 1.00,
+            "soy milk": 0.50,
+            "skim milk": 0.00
+          }
+        },
+        "sweeteners": {
+          "available": ["honey", "vanilla syrup", "sugar-free vanilla", "agave"],
+          "cost": 0.80
+        },
+        "temperature": ["hot (default)", "iced +$0.50"]
+      },
+      "constraints": [
+        "Contains natural caffeine - cannot be made truly decaf (only 30% of coffee's caffeine)",
+        "Oat milk pairs best with matcha flavor"
+      ],
+      "availability": "all_day",
+      "strength_level": "mild_caffeine",
+      "caffeine_content_mg": 70,
+      "vegan_option": "yes (plant milk)",
+      "gluten_free_option": "yes (default)"
+    },
+    {
+      "id": "drink_003",
+      "name": "Hot Chocolate",
+      "category": "specialty_drinks",
+      "subcategory": "hot_drinks",
+      "description": "Rich and creamy hot chocolate made with real chocolate. Topped with whipped cream and marshmallows.",
+      "sizes_and_prices": {
+        "regular": 5.00,
+        "large": 6.00
+      },
+      "base_ingredients": [
+        "full cream milk",
+        "dark chocolate",
+        "cocoa powder",
+        "sugar",
+        "whipped cream",
+        "mini marshmallows"
+      ],
+      "allergens": ["dairy", "may contain soy (chocolate)"],
+      "dietary_tags": ["vegetarian"],
+      "preparation": {
+        "brew_type": "steamed_milk_chocolate",
+        "temperature": "hot",
+        "can_be_iced": false,
+        "can_be_decaf": true,
+        "preparation_time": "4-5 minutes"
+      },
+      "customization_options": {
+        "milk_alternatives": {
+          "available": ["skim milk", "oat milk", "soy milk", "almond milk"],
+          "extra_cost": {
+            "oat milk": 1.00,
+            "almond milk": 1.00,
+            "soy milk": 0.50,
+            "skim milk": 0.00
+          }
+        },
+        "toppings": [
+          "no cream",
+          "no marshmallows",
+          "extra cream +$1.00",
+          "extra marshmallows +$0.50"
+        ],
+        "chocolate_type": [
+          "dark chocolate (default)",
+          "milk chocolate",
+          "white chocolate +$0.50"
+        ]
+      },
+      "constraints": [
+        "Cannot be made vegan with whipped cream and marshmallows",
+        "Can be made dairy-free by using plant milk and no cream/marshmallows",
+        "Contains trace caffeine from chocolate"
+      ],
+      "availability": "all_day",
+      "caffeine_content_mg": 25,
+      "vegan_option": "partial (no cream, no marshmallows, plant milk)",
+      "gluten_free_option": "yes (if no marshmallows - they may contain gluten)"
+    }
+  ],
+  "general_policies": {
+    "allergen_disclaimer": "Please inform staff of any allergies. While we take precautions, we cannot guarantee allergen-free preparation due to shared equipment.",
+    "customization_policy": "We're happy to accommodate dietary needs where possible. Some modifications may incur additional charges.",
+    "availability_note": "Some items may sell out during peak hours. Seasonal items subject to availability.",
+    "milk_default": "All coffee drinks use full cream milk by default unless specified otherwise.",
+    "sustainability": "We use biodegradable cups and encourage BYO cups with $0.50 discount."
+  }
+}
